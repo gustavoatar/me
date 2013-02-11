@@ -1,0 +1,85 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+.wrap{height:768px;width:1024px;/* background:#999; */}
+.col{float:left;position:relative;}
+.fl{float:left;}
+.fr{float:right;}
+.clr{clear:both;}
+.rotate_1{-webkit-transform: rotate(-5deg);-moz-transform: rotate(-5deg);-ms-transform: rotate(-5deg);-o-transform: rotate(-5deg);filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}}
+.rotate_2{}
+.rotate_3{}
+.page_title{position:absolute;z-index:1;top:50%;left:0;}
+.page_intro{}
+.des{background:transparent;width:100px;font-family:LTCRemingtonTypewriterPro, Arial,serif;font-size:0.75em;text-transform:uppercase;}
+.item{position:relative;/* border:1px solid yellow; */}
+.item .info{font-size:0.6em;letter-spacing:-1px;}
+section{position:relative;}
+article{/* height:384px; */}
+/*colours*/
+.yellow{background-color:#FEF96C;}
+/*colurs*/
+/*item realtes styling*/
+#item_1 .des{
+	width:30%;
+}
+#item_1 img{
+}
+#item_1 .info{
+	padding-left:60%;
+}
+#item_2{margin-top:-160px;}
+#item_2 .info{padding-left:25%;padding-right:50%;}
+#item_2 img{margin-right:-25px;position:relative;z-index:1;}
+#item_3 img{background:#000;margin-right:3%;}
+#item_3 .des{width:27%;margin-top:7px;margin-bottom:20px;}
+#item_3 .info{width: 30%;border: 7px solid #000;margin-left: -19px;padding:5px 20px 5px 13px;}
+#item_4 .des{width: 25%;margin-top: 64px;margin-bottom: 20px;margin-left: 15px;}
+#item_4 .info{width: 46%;border: 7px solid #999;margin-left: -7px;padding: 5px 10px 5px 15px;}
+#item_4 img{width:40%;background:#999;}
+#item_5{margin-left:-44px;}
+#item_5 img{margin-top:19px;width:65%;position:relative;z-index:1;}
+#item_5 .des{width:24%;margin-left:-30px;margin-top:20px;}
+#item_5 .info{width: 30%;border: 7px solid #FEF96C;margin-left: -50px;padding: 20px;}
+#item_6 .des{width:34%;}
+#item_6 .info{width:50%;border:7px solid #000;}
+#item_6 img{width:50%;margin-right: -33px;}
+
+/*item realtes styling ends*/
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+	.col1,.col2{width:99%;}
+	.portrait{width:48%;float:left;}
+	/* .col2{width:30%;border:1px solid red;} */
+	.wrap{/* width:768px;height:1025px; */}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+	/* .wrap{width:1025px;height:768px;} */
+	.col1{width:40%;}
+	.col2{width:35%;}
+	.col3{width:24%;}
+	
